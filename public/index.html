@@ -8,18 +8,32 @@
     <link rel="stylesheet" href="/screen.css" />
   </head>
   <body>
-    <input id="input" type="text" />
-    <button class="search-button">Search</button>
+    <div class="input">
+      <input id="input" type="text" />
+      <button class="search-button">Search</button>
+    </div>
     <br />
-    <span>Temp:</span><span id="temp"></span>
+    <div class="content">
+      <span class="description"> Temp:</span>
+      <span id="temp" class="data"></span>
+      <span class="symbol">&deg;</span>
 
-    <span>Humidity:</span><span id="humid"></span>
+      <span class="description">Humidity:</span
+      ><span id="humid" class="data"></span>
+      <span class="symbol">%</span>
 
-    <span>Hi:</span><span id="high-temp"></span>
+      <span class="description">Hi:</span
+      ><span id="high-temp" class="data"></span>
+      <span class="symbol">&deg;</span>
 
-    <span>Low:</span><span id="low-temp"></span>
+      <span class="description">Lo:</span>
+      <span id="low-temp" class="data"></span>
+      <span class="symbol">&deg;</span>
 
-    <h1 class="hello-world"></h1>
+      <span class="description">Pressure:</span>
+      <span id="pressure" class="data"></span>
+    </div>
+
     <script src="/main.js" charset="utf-8"></script>
   </body>
 </html>
