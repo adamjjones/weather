@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head lang="en">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Weather</title>
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="/screen.css" />
-  </head>
-  <body>
-    <div class="input">
-      <input id="input" type="text" />
-      <button class="search-button">Search</button>
+
+<head lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather</title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/screen.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+  <div class="input">
+    <input id="input" type="text" />
+    <button class="search-button">Search</button>
+  </div>
+  <br />
+  <div class="content">
+
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text center-align">
+
+            <span class="description"> Temp: <span id="temp" class="data"></span> </span>
+
+            <span class="symbol">&deg;</span>
+
+            <span class="description">Humidity:</span><span id="humid" class="data"></span>
+            <span class="symbol">%</span>
+
+            <span class="description">Hi:</span><span id="high-temp" class="data"></span>
+            <span class="symbol">&deg;</span>
+
+            <span class="description">Lo:</span>
+            <span id="low-temp" class="data"></span>
+            <span class="symbol">&deg;</span>
+
+            <span class="description">Pressure:</span>
+            <span id="pressure" class="data"></span>
+          </div>
+
+          <div class="card-action">
+
+          </div>
+        </div>
+      </div>
     </div>
-    <br />
-    <div class="content">
-      <span class="description"> Temp:</span>
-      <span id="temp" class="data"></span>
-      <span class="symbol">&deg;</span>
 
-      <span class="description">Humidity:</span
-      ><span id="humid" class="data"></span>
-      <span class="symbol">%</span>
-
-      <span class="description">Hi:</span
-      ><span id="high-temp" class="data"></span>
-      <span class="symbol">&deg;</span>
-
-      <span class="description">Lo:</span>
-      <span id="low-temp" class="data"></span>
-      <span class="symbol">&deg;</span>
-
-      <span class="description">Pressure:</span>
-      <span id="pressure" class="data"></span>
-    </div>
 
     <script src="/main.js" charset="utf-8"></script>
-  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
 </html>

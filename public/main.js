@@ -1,6 +1,6 @@
 let result = ''
 const main = () => {
-  const url = 'http://api.openweathermap.org/data/2.5/weather?q='
+  const url = 'https://api.openweathermap.org/data/2.5/weather?q='
   const zip = document.querySelector('#input').value
   const apikey = '&APPID=3434bc4513b87fa0bd2d62558903e72b'
   const units = '&units=imperial'
@@ -25,7 +25,6 @@ const main = () => {
       document.querySelector('#pressure').textContent = Math.round(
         data.main.pressure
       )
-      document.querySelector('#wind').textContent = Math.round(data.wind.speed)
     })
 }
 document.querySelector('.search-button').addEventListener('click', main)
