@@ -1,6 +1,6 @@
 let result = ''
 const main = () => {
-  const url = 'https://api.openweathermap.org/data/2.5/weather?q='
+  const url = 'https://api.openweathermap.org/data/2.5/weather?zip='
   const zip = document.querySelector('#input').value
   const apikey = '&APPID=3434bc4513b87fa0bd2d62558903e72b'
   const units = '&units=imperial'
@@ -15,6 +15,7 @@ const main = () => {
     .then(data => {
       console.log(data)
       document.querySelector('#temp').textContent = Math.round(data.main.temp)
+      document.querySelector('#feels').textContent = Math.round(data.main.feels_like)
       document.querySelector('#humid').textContent = data.main.humidity
       document.querySelector('#high-temp').textContent = Math.round(
         data.main.temp_max
@@ -24,6 +25,9 @@ const main = () => {
       )
       document.querySelector('#pressure').textContent = Math.round(
         data.main.pressure
+      )
+      document.querySelector('#wind').textContent = Math.round(
+        data.wind.speed
       )
     })
 }
