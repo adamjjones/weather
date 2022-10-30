@@ -8,7 +8,7 @@
     "postdeploy": "echo 'Your site was deployed to https://weather-adam.netlify.com'"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "eslint": "^6.1.0",
     "eslint-config-standard": "^13.0.1",
     "eslint-plugin-import": "^2.18.2",
